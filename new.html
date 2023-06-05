@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> OnInput Example</h1>
+    <p>Hello my name is <span id="name"></span></p>
+    <input type="text" name="name" placeholder="enter your name" oninput="setName(this)">
+    <select id ="food" onchange="pickFood(this)" >
+        fav food 
+        <option>taco</option>
+        <option>pizza</option>
+        <option>efg</option>
+        <option>subway</option>
+        <option>abc</option>
+      
+    </select>
+    <button onclick="order()">click to order</button>
+        
+
+
+    <script>
+
+        var spaName=document.querySelector("#name")
+        var foodToOrder
+        function setName(element){
+            spaName.innerText=element.value
+
+        }
+        var food =document.querySelector("food")
+        function pickFood(element){
+            foodToOrder=element.value
+        }
+        function order(){
+            alert("you order " + foodToOrder)
+        }
+            
+        
+    </script>
+    
+</body>
+</html>
