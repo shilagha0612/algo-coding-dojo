@@ -20,7 +20,7 @@ const expected = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
  * Sorts the given nums in-place by mutating the array.
  * Best: O(n) linear when array is already sorted.
  * Average: O(n^2) quadratic.
- * Worst: O(n^2) quadratic when the array is reverse sorted.
+ * Worst: O(n^2) quadratic when the array is reverse sort
  * @param {Array<number>} nums
  * @returns {Array<number>} The given nums after being sorted.
  */
